@@ -10,6 +10,8 @@ package designpatterns.behavioral.strategy.pattern;
  * --------
  * define a family of algorithms, and make them interchangeable, this pattern lets the algorithm vary based on client.
  * also known as Policy Pattern.
+ *
+ * Strategy pattern is name such, as it is about picking and applying strategy/algorithms at run time.
  */
 public interface Strategy {
 }
