@@ -1,6 +1,6 @@
-package designpatterns.behavioral.strategy.example.gof;
+package designpatterns.behavioral.strategy.problems.problem_gof.solution_strategy;
 
-import designpatterns.behavioral.strategy.structure.Context;
+import designpatterns.behavioral.strategy.pattern.Context;
 
 public class Composition implements Context {
     private final Compositor compositor;

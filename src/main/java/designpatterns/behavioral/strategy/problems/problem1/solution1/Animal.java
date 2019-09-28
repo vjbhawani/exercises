@@ -1,6 +1,6 @@
 package designpatterns.behavioral.strategy.problems.problem1.solution1;
 
-import designpatterns.behavioral.strategy.structure.Context;
+import designpatterns.behavioral.strategy.pattern.Context;
 
 public class Animal implements Context {
     /*

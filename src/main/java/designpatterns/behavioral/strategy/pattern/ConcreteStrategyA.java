@@ -1,4 +1,4 @@
-package designpatterns.behavioral.strategy.structure;
+package designpatterns.behavioral.strategy.pattern;
 
 public class ConcreteStrategyA implements Strategy {
 }
