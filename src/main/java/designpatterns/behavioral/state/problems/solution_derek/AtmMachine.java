@@ -2,6 +2,9 @@ package designpatterns.behavioral.state.problems.solution_derek;
 
 import designpatterns.behavioral.state.pattern.Context;
 
+/**
+ *  here AtmMachine behaviour depends on AtmState, and it's behaviour is changing at run time depending on the current AtmState.
+ */
 public class AtmMachine extends Context {
     private AtmState state = new CardRemoved();
 
