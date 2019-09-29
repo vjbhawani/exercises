@@ -1,6 +1,16 @@
 package designpatterns.behavioral.state.problems.solution_derek;
 
 public class CashDispatch implements AtmState {
+    private static AtmState state = new CashDispatch();
+
+    private CashDispatch() {
+
+    }
+
+    public static AtmState getInstance() {
+        return state;
+    }
+
     @Override
     public void cardInserted(AtmMachine atmMachine) {
         System.out.println("[cardInserted] card already inserted");
@@ -19,6 +29,6 @@ public class CashDispatch implements AtmState {
     @Override
     public void cardRemoved(AtmMachine atmMachine) {
         System.out.println("[cardRemoved] card removed");
-        atmMachine.setState(new CardRemoved());
+        atmMachine.setState(CardRemoved.getInstance());
     }
 }

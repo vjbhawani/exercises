@@ -1,10 +1,21 @@
 package designpatterns.behavioral.state.problems.solution_derek;
 
 public class CardRemoved implements AtmState {
+
+    private static AtmState state = new CardRemoved();
+
+    private CardRemoved() {
+
+    }
+
+    public static AtmState getInstance() {
+        return state;
+    }
+
     @Override
     public void cardInserted(AtmMachine atmMachine) {
         System.out.println("[cardInserted] card inserted");
-        atmMachine.setState(new CardInserted());
+        atmMachine.setState(CardInserted.getInstance());
     }
 
     @Override
